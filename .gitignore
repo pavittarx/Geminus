@@ -1,0 +1,11 @@
+# Configuration file
+geminus.conf
+
+# Webstorm configuration
+.idea/
+
+# Logs
+logs/
+
+# Node.js modules
+node_modules/
