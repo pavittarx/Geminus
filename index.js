@@ -11,7 +11,7 @@ const geminus = new Geminus({
 });
 
 /**
- * Initialize Octopus
+ * Initialize Geminus
  */
 geminus.initialize();
 
