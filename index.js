@@ -20,6 +20,9 @@ geminus.initialize();
  */
 geminus.registry
   .registerDefaults()
+  .registerGroups([
+    ['memes', 'Memes'],
+  ])
   .registerCommandsIn(path.join(__dirname, './src/commands'));
 
 
