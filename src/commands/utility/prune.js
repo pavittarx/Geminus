@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 
-class CommandName extends Command {
+class PruneCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'prune',
@@ -33,4 +33,4 @@ class CommandName extends Command {
   }
 }
 
-module.exports = CommandName;
+module.exports = PruneCommand;

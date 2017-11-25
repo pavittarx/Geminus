@@ -1,7 +1,7 @@
 const { Command } = require('discord.js-commando');
 const Jimp = require('jimp');
 
-class CommandName extends Command {
+class DisabilityCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'disability',
@@ -34,4 +34,4 @@ class CommandName extends Command {
   }
 }
 
-module.exports = CommandName;
+module.exports = DisabilityCommand;

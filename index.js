@@ -2,12 +2,13 @@ require('dotenv').config({ path: 'geminus.conf' });
 const { Geminus } = require('./src');
 const path = require('path');
 
-const { auth_token, prefix } = process.env;
+const { auth_token, prefix, embed_color } = process.env;
 
 const geminus = new Geminus({
   commandPrefix: prefix,
   selfbot: true,
   unknownCommandResponse: false,
+  embedColor: embed_color,
 });
 
 /**
@@ -21,6 +22,7 @@ geminus.initialize();
 geminus.registry
   .registerDefaults()
   .registerGroups([
+    ['fun', 'Fun'],
     ['memes', 'Memes'],
     ['utility', 'Utility'],
   ])
