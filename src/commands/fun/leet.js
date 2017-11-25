@@ -27,4 +27,4 @@ class LeetCommand extends Command {
   }
 }
 
-module.exports = LeetCommand ;
+module.exports = LeetCommand;
