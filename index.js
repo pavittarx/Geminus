@@ -24,6 +24,7 @@ geminus.registry
   .registerGroups([
     ['fun', 'Fun'],
     ['memes', 'Memes'],
+    ['search', 'Search'],
     ['utility', 'Utility'],
   ])
   .registerCommandsIn(path.join(__dirname, './src/commands'));

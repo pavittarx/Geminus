@@ -25,15 +25,16 @@ class MagicBallCommand extends Command {
     });
   }
 
-  run(message, { question }) {
-    const answer = _.sample(answers);
+  async run(message, { question }) {
+    await message.delete();
 
+    const answer = _.sample(answers);
     const embed = new RichEmbed()
       .setColor(this.client.options.embedColor)
       .setTitle(`${question}`)
       .setDescription(`🎱 ${answer}`);
 
-    return message.edit(embed);
+    return message.channel.send(embed);
   }
 }
 

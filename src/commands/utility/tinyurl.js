@@ -30,7 +30,7 @@ class TinyURLCommand extends Command {
       .addField(`Link`, url)
       .addField('Shortened URL', text);
 
-    message.channel.send(embed);
+    return message.channel.send(embed);
   }
 }
 

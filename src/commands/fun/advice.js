@@ -13,6 +13,8 @@ class AdviceCommand extends Command {
   }
 
   async run(message) {
+    await message.delete();
+
     const { text } = await this.client.request('GET', 'http://api.adviceslip.com/advice');
     const json = JSON.parse(text);
 
@@ -20,7 +22,7 @@ class AdviceCommand extends Command {
       .setColor(this.client.options.embedColor)
       .setDescription(`:star: ${json.slip.advice}`);
 
-    return message.edit(embed);
+    return message.channel.send(embed);
   }
 }
 
