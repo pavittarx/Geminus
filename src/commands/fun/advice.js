@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class AdviceCommand extends Command {
   constructor(client) {
@@ -18,7 +18,7 @@ class AdviceCommand extends Command {
     const { text } = await this.client.request('GET', 'http://api.adviceslip.com/advice');
     const json = JSON.parse(text);
 
-    const embed = new RichEmbed()
+    const embed = new MessageEmbed()
       .setColor(this.client.options.embedColor)
       .setDescription(`:star: ${json.slip.advice}`);
 

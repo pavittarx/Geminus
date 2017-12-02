@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class AvatarCommand extends Command {
   constructor(client) {
@@ -23,7 +23,7 @@ class AvatarCommand extends Command {
   async run(message, { user }) {
     await message.delete();
 
-    const embed = new RichEmbed()
+    const embed = new MessageEmbed()
       .setColor(this.client.options.embedColor)
       .setTitle(`${user.username}'s Avatar`)
       .setDescription(`[Download](${user.avatarURL})`)

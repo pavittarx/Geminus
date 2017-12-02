@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class TinyURLCommand extends Command {
   constructor(client) {
@@ -25,7 +25,7 @@ class TinyURLCommand extends Command {
 
     const { text } = await this.client.request('GET', `http://tinyurl.com/api-create.php?url=${encodeURIComponent(url)}`);
 
-    const embed = new RichEmbed()
+    const embed = new MessageEmbed()
       .setColor(this.client.options.embedColor)
       .addField(`Link`, url)
       .addField('Shortened URL', text);
