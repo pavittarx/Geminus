@@ -1,14 +1,12 @@
-require('dotenv').config({ path: 'geminus.conf' });
+const { authToken, embedColor, prefix } = require('./config/Geminus');
 const { Geminus } = require('./src');
 const path = require('path');
 
-const { auth_token, prefix, embed_color } = process.env;
-
 const geminus = new Geminus({
-  commandPrefix: prefix,
   selfbot: true,
+  prefix: prefix,
   unknownCommandResponse: false,
-  embedColor: embed_color,
+  embedColor: embedColor,
 });
 
 /**
@@ -30,4 +28,4 @@ geminus.registry
   .registerCommandsIn(path.join(__dirname, './src/commands'));
 
 
-geminus.login(auth_token);
+geminus.login(authToken);

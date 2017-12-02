@@ -22,7 +22,7 @@ class PruneCommand extends Command {
 
   async run(message, { count }) {
     try {
-      const messages = await message.channel.fetchMessages({ limit: count });
+      const messages = await message.channel.messages.fetch({ limit: count });
       const deletable = messages.filter(m => m.author.id === this.client.user.id);
       await Promise.all(deletable.map(m => m.delete()));
 
