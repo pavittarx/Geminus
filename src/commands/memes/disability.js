@@ -24,7 +24,7 @@ class DisabilityCommand extends Command {
     await message.delete();
 
     const disability = await Jimp.read('./resources/images/memes/disability.jpg');
-    const avatar = await Jimp.read(user.avatarURL);
+    const avatar = await Jimp.read(user.avatarURL({ format: 'png' }));
 
     avatar.resize(120, 120);
     disability.composite(avatar, 360, 250);

@@ -23,7 +23,7 @@ class ShitCommand extends Command {
     await message.delete();
 
     const shit = await Jimp.read('./resources/images/memes/shit.jpg');
-    const avatar = await Jimp.read(user.avatarURL);
+    const avatar = await Jimp.read(user.avatarURL({ format: 'png' }));
 
     avatar.resize(200, 200);
     avatar.rotate(310);
