@@ -18,4 +18,4 @@ npm install or yarn install
 ```
 
 ## Help
-If you don't understand something or need assistants, feel free to join our [Discord](https://discord.gg/4f6TFHQ) server.
+If you don't understand something or need assistance, feel free to join our [Discord](https://discord.gg/4f6TFHQ) server.
