@@ -229,7 +229,7 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-common-tags@^1.4.0:
+common-tags@^1.0.0:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.5.1.tgz#e2e39931a013cd02253defeed89a1ad615a27f07"
   dependencies:
@@ -313,11 +313,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
 
-discord.js-commando@^0.9.0:
+"discord.js-commando@https://github.com/Gawdl3y/discord.js-commando":
   version "0.9.0"
-  resolved "https://registry.yarnpkg.com/discord.js-commando/-/discord.js-commando-0.9.0.tgz#f9dcfeb6b8cab8cc585cd5cc7ca6c1c4a99a2e94"
+  resolved "https://github.com/Gawdl3y/discord.js-commando#7aa08a6109b59e8794e9b4aa8364e4a189d3a4f7"
   dependencies:
-    common-tags "^1.4.0"
+    common-tags "^1.0.0"
     escape-string-regexp "^1.0.0"
     require-all "^2.0.0"
 

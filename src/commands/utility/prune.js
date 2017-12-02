@@ -8,7 +8,6 @@ class PruneCommand extends Command {
       group: 'utility',
       memberName: 'prune',
       description: 'Deletes up to 99 messages.',
-      clientPermissions: ['MANAGE_MESSAGES'],
       args: [
         {
           key: 'count',

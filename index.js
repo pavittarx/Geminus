@@ -3,8 +3,8 @@ const { Geminus } = require('./src');
 const path = require('path');
 
 const geminus = new Geminus({
+  commandPrefix: prefix,
   selfbot: true,
-  prefix: prefix,
   unknownCommandResponse: false,
   embedColor: embedColor,
 });
