@@ -12,6 +12,11 @@ class ByeMomCommand extends Command {
       clientPermissions: ['ATTACH_FILES'],
       args: [
         {
+          key: 'user',
+          prompt: 'Searching for?',
+          type: 'user',
+        },
+        {
           key: 'search',
           prompt: 'Searching for?',
           type: 'string',
@@ -20,11 +25,12 @@ class ByeMomCommand extends Command {
     });
   }
 
-  async run(message, { search }) {
-    let avatarurl = message.mentions.users.size > 0 ? message.mentions.users.first().displayAvatarURL({ format: 'jpg' }) : message.author.displayAvatarURL({ format: 'jpg' });
+  async run(message, { search, user }) {
+    await message.delete();
+
 
     const mom = await Jimp.read('./resources/images/memes/mom.png');
-    const avatar = await Jimp.read(avatarurl);
+    const avatar = await Jimp.read(user.displayAvatarURL({ format: 'jpg' }));
     const avatar2 = avatar.clone();
     const blank = await Jimp.read('./resources/images/blank.png');
 
