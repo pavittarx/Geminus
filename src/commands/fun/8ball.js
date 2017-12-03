@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const answers = require('../../../resources/data/8ball');
 const _ = require('lodash');
 
@@ -29,7 +29,7 @@ class MagicBallCommand extends Command {
     await message.delete();
 
     const answer = _.sample(answers);
-    const embed = new RichEmbed()
+    const embed = new MessageEmbed()
       .setColor(this.client.options.embedColor)
       .setTitle(`${question}`)
       .setDescription(`🎱 ${answer}`);

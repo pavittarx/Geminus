@@ -26,8 +26,8 @@ class AvatarCommand extends Command {
     const embed = new MessageEmbed()
       .setColor(this.client.options.embedColor)
       .setTitle(`${user.username}'s Avatar`)
-      .setDescription(`[Download](${user.avatarURL})`)
-      .setImage(user.avatarURL);
+      .setDescription(`[Download](${user.avatarURL()})`)
+      .setImage(user.avatarURL());
 
     return message.channel.send(embed);
   }
