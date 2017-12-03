@@ -20,6 +20,7 @@ geminus.initialize();
 geminus.registry
   .registerDefaults()
   .registerGroups([
+    ['copypasta', 'copypasta'],
     ['fun', 'Fun'],
     ['memes', 'Memes'],
     ['search', 'Search'],
