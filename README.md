@@ -27,10 +27,20 @@
 2. Type ```node index``` & hit enter. 
 3. You can now use bot on discord.
 
-## Warnings 
-The project is no longer maintained by the original author, and the master branch was deleted by the author, so I got its total control since I made a little contribution to the original project and its forked branch existed with me.
-I have no intention of developing the selfbot any further, so the project is archived as of now, but it can be downloaded, forked & used under default licensing terms. 
-Thanks. 
-
 ## License 
 GPL 3.0 ```See License File ```
+
+## Author 
+Original Author: [iSyph]https://github.com/iSyph
+
+Current Ownership : [pavittarx]https://github.com/pavittarx
+
+## Warnings 
+The project is no longer maintained by the original author, and the master branch was deleted, so I got the ownership to the master branch of the project since I made a little contribution to the original project and its forked branch existed with me.
+I have no intention of developing the Discord selfbot any further, so the project is archived as of now, but it can be downloaded, forked & used under default licensing terms. <br/>
+
+## Disclaimer 
+For the original author of the project, if you feel to have back the ownership of your project, please contact me and I will provide you with it. 
+ 
+ 
+ Thanks
